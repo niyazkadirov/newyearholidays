@@ -1,0 +1,204 @@
+2019-12-22 17:24:45 INFO  LoggerExample:11 - This information message
+2019-12-22 17:24:45 ERROR LoggerExample:18 - This error message
+2019-12-22 17:26:44 INFO  LoggerExample:11 - This information message
+2019-12-22 17:26:44 ERROR LoggerExample:18 - This error message
+2019-12-22 17:36:22 INFO  LoggerExample:11 - This information message
+2019-12-22 17:36:22 ERROR LoggerExample:18 - This error message
+2019-12-22 17:36:54 INFO  LoggerExample:11 - This information message
+2019-12-22 17:36:54 ERROR LoggerExample:18 - This error message
+2019-12-23 21:11:18 INFO  LoggerExample:12 - Hello Mike
+2019-12-23 21:13:21 INFO  LoggerExample:12 - Hello Mike My string
+2019-12-23 21:18:25 WARN  LoggerExample:12 - Hello Mike My string
+2019-12-23 21:22:39 WARN  LoggerExample:12 - Hello Mike My string
+2019-12-23 21:24:00 WARN  LoggerExample:12 - Hello Mike My string
+2019-12-23 21:25:04 WARN  LoggerExample:12 - Hello Mike My string
+2019-12-23 21:29:37 WARN  LoggerExample:12 - Hello Mike My string
+2019-12-23 21:29:59 WARN  LoggerExample:12 - Hello Mike My string
+2019-12-23 21:30:59 WARN  LoggerExample:12 - Hello Mike My string
+2019-12-23 21:30:59 INFO  LoggerExample:13 - Hello Mike My string
+2019-12-23 21:31:17 WARN  LoggerExample:12 - Hello Mike My string
+2019-12-23 21:31:17 INFO  LoggerExample:13 - Hello Mike My string
+2019-12-23 21:32:43 WARN  LoggerExample:12 - Hello Mike My string
+2019-12-23 21:32:43 INFO  LoggerExample:13 - Hello Mike My string
+2019-12-23 21:36:07 WARN  LoggerExample:12 - Hello Mike My string
+2019-12-23 21:36:07 INFO  LoggerExample:13 - Hello Mike My string
+2019-12-23 21:45:41 WARN  LoggerExample:12 - Hello Mike My string
+2019-12-23 21:45:41 INFO  LoggerExample:13 - Hello Mike My string
+2019-12-26 23:19:10 INFO  ManagementContext:132 - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2019-12-26 23:19:10 INFO  PListStore:331 - PListStore:[C:\Users\niyaz\IdeaProjects\letscode\src\newyearholidays\activemq-data\localhost\tmp_storage] started
+2019-12-26 23:19:10 INFO  BrokerService:619 - Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\niyaz\IdeaProjects\letscode\src\newyearholidays\activemq-data\localhost\KahaDB]
+2019-12-26 23:19:10 INFO  BrokerService:659 - Apache ActiveMQ 5.7.0 (localhost, ID:DESKTOP-DU2EQIO-1134-1577391550773-0:1) is starting
+2019-12-26 23:19:10 INFO  BrokerService:696 - Apache ActiveMQ 5.7.0 (localhost, ID:DESKTOP-DU2EQIO-1134-1577391550773-0:1) started
+2019-12-26 23:19:10 INFO  BrokerService:698 - For help or more information please see: http://activemq.apache.org
+2019-12-26 23:19:10 INFO  TransportConnector:246 - Connector vm://localhost Started
+2019-12-26 23:19:11 INFO  TransportConnector:286 - Connector vm://localhost Stopped
+2019-12-26 23:19:11 INFO  BrokerService:730 - Apache ActiveMQ 5.7.0 (localhost, ID:DESKTOP-DU2EQIO-1134-1577391550773-0:1) is shutting down
+2019-12-26 23:19:11 INFO  PListStore:356 - PListStore:[C:\Users\niyaz\IdeaProjects\letscode\src\newyearholidays\activemq-data\localhost\tmp_storage] stopped
+2019-12-26 23:19:11 INFO  KahaDBStore:206 - Stopping async queue tasks
+2019-12-26 23:19:11 INFO  KahaDBStore:220 - Stopping async topic tasks
+2019-12-26 23:19:11 INFO  KahaDBStore:248 - Stopped KahaDB
+2019-12-26 23:19:11 ERROR BrokerService:581 - Failed to start Apache ActiveMQ (localhost, null). Reason: javax.management.InstanceAlreadyExistsException: org.apache.activemq:BrokerName=localhost,Type=Broker
+javax.management.InstanceAlreadyExistsException: org.apache.activemq:BrokerName=localhost,Type=Broker
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.activemq.broker.jmx.ManagementContext.registerMBean(ManagementContext.java:366)
+	at org.apache.activemq.broker.jmx.AnnotatedMBean.registerMBean(AnnotatedMBean.java:72)
+	at org.apache.activemq.broker.BrokerService.startManagementContext(BrokerService.java:2370)
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:567)
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:124)
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:54)
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:67)
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:250)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:265)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:238)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:184)
+	at com.newyearhollidays.activeMQ.App$HelloWorldConsumer.run(App.java:101)
+	at java.lang.Thread.run(Thread.java:748)
+2019-12-26 23:19:11 WARN  ManagementContext:135 - Failed to start jmx connector: Cannot bind to URL [rmi://localhost:1099/jmxrmi]: javax.naming.NameAlreadyBoundException: jmxrmi [Root exception is java.rmi.AlreadyBoundException: jmxrmi]. Will restart management to re-create jmx connector, trying to remedy this issue.
+2019-12-26 23:19:11 INFO  BrokerService:730 - Apache ActiveMQ 5.7.0 (localhost, null) is shutting down
+2019-12-26 23:19:11 INFO  BrokerService:806 - Apache ActiveMQ 5.7.0 (localhost, null) uptime 0.045 seconds
+2019-12-26 23:19:11 INFO  BrokerService:809 - Apache ActiveMQ 5.7.0 (localhost, null) is shutdown
+2019-12-26 23:19:11 ERROR BrokerService:581 - Failed to start Apache ActiveMQ (localhost, null). Reason: javax.management.InstanceAlreadyExistsException: org.apache.activemq:BrokerName=localhost,Type=Broker
+javax.management.InstanceAlreadyExistsException: org.apache.activemq:BrokerName=localhost,Type=Broker
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.activemq.broker.jmx.ManagementContext.registerMBean(ManagementContext.java:366)
+	at org.apache.activemq.broker.jmx.AnnotatedMBean.registerMBean(AnnotatedMBean.java:72)
+	at org.apache.activemq.broker.BrokerService.startManagementContext(BrokerService.java:2370)
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:567)
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:124)
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:54)
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:67)
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:250)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:265)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:238)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:184)
+	at com.newyearhollidays.activeMQ.App$HelloWorldProducer.run(App.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-12-26 23:19:11 INFO  BrokerService:730 - Apache ActiveMQ 5.7.0 (localhost, null) is shutting down
+2019-12-26 23:19:11 INFO  BrokerService:806 - Apache ActiveMQ 5.7.0 (localhost, null) uptime 0.014 seconds
+2019-12-26 23:19:11 INFO  BrokerService:809 - Apache ActiveMQ 5.7.0 (localhost, null) is shutdown
+2019-12-26 23:19:11 ERROR BrokerService:581 - Failed to start Apache ActiveMQ (localhost, null). Reason: javax.management.InstanceAlreadyExistsException: org.apache.activemq:BrokerName=localhost,Type=Broker
+javax.management.InstanceAlreadyExistsException: org.apache.activemq:BrokerName=localhost,Type=Broker
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.activemq.broker.jmx.ManagementContext.registerMBean(ManagementContext.java:366)
+	at org.apache.activemq.broker.jmx.AnnotatedMBean.registerMBean(AnnotatedMBean.java:72)
+	at org.apache.activemq.broker.BrokerService.startManagementContext(BrokerService.java:2370)
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:567)
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:124)
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:54)
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:67)
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:250)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:265)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:238)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:184)
+	at com.newyearhollidays.activeMQ.App$HelloWorldProducer.run(App.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-12-26 23:19:11 INFO  BrokerService:730 - Apache ActiveMQ 5.7.0 (localhost, null) is shutting down
+2019-12-26 23:19:11 INFO  BrokerService:806 - Apache ActiveMQ 5.7.0 (localhost, null) uptime 0.000 seconds
+2019-12-26 23:19:11 INFO  BrokerService:809 - Apache ActiveMQ 5.7.0 (localhost, null) is shutdown
+2019-12-26 23:19:11 ERROR BrokerService:581 - Failed to start Apache ActiveMQ (localhost, null). Reason: javax.management.InstanceAlreadyExistsException: org.apache.activemq:BrokerName=localhost,Type=Broker
+javax.management.InstanceAlreadyExistsException: org.apache.activemq:BrokerName=localhost,Type=Broker
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.activemq.broker.jmx.ManagementContext.registerMBean(ManagementContext.java:366)
+	at org.apache.activemq.broker.jmx.AnnotatedMBean.registerMBean(AnnotatedMBean.java:72)
+	at org.apache.activemq.broker.BrokerService.startManagementContext(BrokerService.java:2370)
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:567)
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:124)
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:54)
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:67)
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:250)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:265)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:238)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:184)
+	at com.newyearhollidays.activeMQ.App$HelloWorldConsumer.run(App.java:101)
+	at java.lang.Thread.run(Thread.java:748)
+2019-12-26 23:19:11 INFO  BrokerService:730 - Apache ActiveMQ 5.7.0 (localhost, null) is shutting down
+2019-12-26 23:19:11 INFO  BrokerService:806 - Apache ActiveMQ 5.7.0 (localhost, null) uptime 0.005 seconds
+2019-12-26 23:19:11 INFO  BrokerService:809 - Apache ActiveMQ 5.7.0 (localhost, null) is shutdown
+2019-12-26 23:19:11 ERROR BrokerService:581 - Failed to start Apache ActiveMQ (localhost, null). Reason: javax.management.InstanceAlreadyExistsException: org.apache.activemq:BrokerName=localhost,Type=Broker
+javax.management.InstanceAlreadyExistsException: org.apache.activemq:BrokerName=localhost,Type=Broker
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.activemq.broker.jmx.ManagementContext.registerMBean(ManagementContext.java:366)
+	at org.apache.activemq.broker.jmx.AnnotatedMBean.registerMBean(AnnotatedMBean.java:72)
+	at org.apache.activemq.broker.BrokerService.startManagementContext(BrokerService.java:2370)
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:567)
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:124)
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:54)
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:67)
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:250)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:265)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:238)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:184)
+	at com.newyearhollidays.activeMQ.App$HelloWorldConsumer.run(App.java:101)
+	at java.lang.Thread.run(Thread.java:748)
+2019-12-26 23:19:11 INFO  BrokerService:730 - Apache ActiveMQ 5.7.0 (localhost, null) is shutting down
+2019-12-26 23:19:11 INFO  BrokerService:806 - Apache ActiveMQ 5.7.0 (localhost, null) uptime 0.006 seconds
+2019-12-26 23:19:11 INFO  BrokerService:809 - Apache ActiveMQ 5.7.0 (localhost, null) is shutdown
+2019-12-26 23:19:11 ERROR BrokerService:581 - Failed to start Apache ActiveMQ (localhost, null). Reason: javax.management.InstanceAlreadyExistsException: org.apache.activemq:BrokerName=localhost,Type=Broker
+javax.management.InstanceAlreadyExistsException: org.apache.activemq:BrokerName=localhost,Type=Broker
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.activemq.broker.jmx.ManagementContext.registerMBean(ManagementContext.java:366)
+	at org.apache.activemq.broker.jmx.AnnotatedMBean.registerMBean(AnnotatedMBean.java:72)
+	at org.apache.activemq.broker.BrokerService.startManagementContext(BrokerService.java:2370)
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:567)
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:124)
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:54)
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:67)
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:250)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:265)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:238)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:184)
+	at com.newyearhollidays.activeMQ.App$HelloWorldProducer.run(App.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-12-26 23:19:11 INFO  BrokerService:730 - Apache ActiveMQ 5.7.0 (localhost, null) is shutting down
+2019-12-26 23:19:11 INFO  BrokerService:806 - Apache ActiveMQ 5.7.0 (localhost, null) uptime 0.005 seconds
+2019-12-26 23:19:11 INFO  BrokerService:809 - Apache ActiveMQ 5.7.0 (localhost, null) is shutdown
+2019-12-26 23:19:11 INFO  BrokerService:806 - Apache ActiveMQ 5.7.0 (localhost, ID:DESKTOP-DU2EQIO-1134-1577391550773-0:1) uptime 2.057 seconds
+2019-12-26 23:19:11 INFO  BrokerService:809 - Apache ActiveMQ 5.7.0 (localhost, ID:DESKTOP-DU2EQIO-1134-1577391550773-0:1) is shutdown
+2019-12-26 23:19:12 INFO  ManagementContext:132 - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2019-12-26 23:19:12 INFO  PListStore:331 - PListStore:[C:\Users\niyaz\IdeaProjects\letscode\src\newyearholidays\activemq-data\localhost\tmp_storage] started
+2019-12-26 23:19:12 INFO  BrokerService:619 - Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\niyaz\IdeaProjects\letscode\src\newyearholidays\activemq-data\localhost\KahaDB]
+2019-12-26 23:19:12 INFO  MessageDatabase:153 - KahaDB is version 4
+2019-12-26 23:19:12 INFO  MessageDatabase:485 - Recovering from the journal ...
+2019-12-26 23:19:12 INFO  MessageDatabase:498 - Recovery replayed 1 operations from the journal in 0.003 seconds.
+2019-12-26 23:19:12 INFO  BrokerService:659 - Apache ActiveMQ 5.7.0 (localhost, ID:DESKTOP-DU2EQIO-1134-1577391550773-0:2) is starting
+2019-12-26 23:19:12 INFO  BrokerService:696 - Apache ActiveMQ 5.7.0 (localhost, ID:DESKTOP-DU2EQIO-1134-1577391550773-0:2) started
+2019-12-26 23:19:12 INFO  BrokerService:698 - For help or more information please see: http://activemq.apache.org
+2019-12-26 23:19:12 INFO  TransportConnector:246 - Connector vm://localhost Started
+2019-12-26 23:19:13 INFO  TransportConnector:286 - Connector vm://localhost Stopped
+2019-12-26 23:19:13 INFO  BrokerService:730 - Apache ActiveMQ 5.7.0 (localhost, ID:DESKTOP-DU2EQIO-1134-1577391550773-0:2) is shutting down
+2019-12-26 23:19:13 INFO  PListStore:356 - PListStore:[C:\Users\niyaz\IdeaProjects\letscode\src\newyearholidays\activemq-data\localhost\tmp_storage] stopped
+2019-12-26 23:19:13 INFO  KahaDBStore:206 - Stopping async queue tasks
+2019-12-26 23:19:13 INFO  KahaDBStore:220 - Stopping async topic tasks
+2019-12-26 23:19:13 INFO  KahaDBStore:248 - Stopped KahaDB
+2019-12-26 23:19:13 INFO  BrokerService:806 - Apache ActiveMQ 5.7.0 (localhost, ID:DESKTOP-DU2EQIO-1134-1577391550773-0:2) uptime 1.730 seconds
+2019-12-26 23:19:13 INFO  BrokerService:809 - Apache ActiveMQ 5.7.0 (localhost, ID:DESKTOP-DU2EQIO-1134-1577391550773-0:2) is shutdown
